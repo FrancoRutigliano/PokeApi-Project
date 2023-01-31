@@ -24,7 +24,7 @@ console.log(main_types)
 const ShowPokemons = async () => {
   for (let i = 1; i <= pokemons_number; i++){
     await getPokemon(i)
-    break
+
   }
 }
 
@@ -54,7 +54,7 @@ function createPokemonCard(poke) {
     <img src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png"></img>
   </div>
   <div class = "info">
-    <span class = "number>${poke.id}</span>
+    <span class = "number">${poke.id}</span>
     <h3>${poke.name[0].toUpperCase() + poke.name.slice(1)} </h3>
     <small class = "type">Type: <span> ${type} </span>  </small>
   </div>
